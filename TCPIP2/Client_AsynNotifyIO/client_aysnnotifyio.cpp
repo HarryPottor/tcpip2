@@ -37,9 +37,6 @@ int main(int argc, char * argv[])
 	{
 		ErrorHanding("socket error");
 	}
-
-	
-
 	memset(&servaddr, 0, sizeof(servaddr));
 	servaddr.sin_family = AF_INET;
 	servaddr.sin_addr.s_addr = inet_addr(argv[1]);
